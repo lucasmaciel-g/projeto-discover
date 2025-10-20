@@ -1,5 +1,17 @@
-body{
-/* Colocando as configurações de forma separada */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  /* Colocando as configurações de forma separada */
 
   /*
   background-image: url(./assets/bg-mobile.jpg);
@@ -8,9 +20,61 @@ body{
   background-size: cover;
   */
 
-/* Usando short hand */
+  /* Usando short hand */
 
   /* background: color image repeat position/size  */
 
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+#container {
+  border: 1px solid red;
+  max-width: 360px;
+  margin: 56px auto 0;
+}
+
+.avatar {
+  max-width: 112px;
+  margin: 0 auto;
+}
+
+.avatar img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.linksUteis {
+  padding: 24px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.links li {
+  width: 100%;
+  padding: 16px 24px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: 1s;
+}
+
+.links li:hover {
+  background-color: transparent;
 }
