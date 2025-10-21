@@ -58,6 +58,7 @@ body {
   max-width: 112px;
   margin: 0 auto;
   color: var(--text-color);
+  padding-bottom: 24px;
 }
 
 .avatar img {
@@ -70,7 +71,6 @@ body {
 #switch {
   position: relative;
   width: 64px;
-
   margin: 4px auto;
 }
 
